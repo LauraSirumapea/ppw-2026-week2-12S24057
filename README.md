@@ -46,3 +46,10 @@ praktikum01/
 ├── README.md
 └── assets/
     └── laura.jpeg
+
+    ## GitHub Pages
+
+Website ini telah dipublikasikan menggunakan GitHub Pages.
+
+**Live Demo:**  
+https://laurasirumapea.github.io/ppw-2026-week2-12S24057/
