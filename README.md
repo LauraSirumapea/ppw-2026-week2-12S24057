@@ -45,10 +45,11 @@ praktikum01/
 ├── style.css
 ├── README.md
 └── assets/
-    └── laura.jpeg
-     └── screenshot.png
+    ├── laura.jpeg
+    └── screenshot.png
+```
 
-    ## GitHub Pages
+## GitHub Pages
 
 Website ini telah dipublikasikan menggunakan GitHub Pages.
 
