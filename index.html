@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Awise — Portofolio Sistem Informasi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#tentang" class="brand">Laura Awise</a>
+
+            <nav class="site-nav" aria-label="Navigasi utama">
+                <a href="#tentang">Tentang Saya</a>
+                <a href="#portofolio">Portofolio</a>
+                <a href="#keahlian">Keahlian</a>
+                <a href="#kontak">Formulir Layanan</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="tentang" class="hero">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="hero-eyebrow">Mahasiswa Sistem Informasi · Institut Teknologi Del</p>
+                    <h1 class="hero-name">Laura Awise</h1>
+                    <p class="hero-lede">
+                        Saya adalah mahasiswa Sistem Informasi Institut Teknologi Del
+                        semester 5 yang tertarik pada bidang teknologi, pengolahan data,
+                        dan perancangan antarmuka aplikasi.
+                    </p>
+                    <ul class="hero-focus-pills">
+                        <li>Data Analysis</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                    <div class="hero-actions">
+                        <a href="#portofolio" class="btn btn-primary">Lihat Portofolio</a>
+                        <a href="#kontak" class="btn btn-ghost">Hubungi Saya</a>
+                    </div>
+                </div>
+
+                <div class="hero-side">
+                    <div class="avatar-frame">
+                        <!-- GANTI src di bawah ini dengan foto kamu, taruh filenya di folder assets/ -->
+                        <img src="assets/laura.jpeg" alt="Foto Laura Awise" class="avatar-photo"
+                             onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
+                        <div id="avatar-fallback" class="avatar-fallback" aria-hidden="true">
+                            <span>LA</span>
+                        </div>
+                    </div>
+
+                    <aside class="focus-card" aria-labelledby="fokus-karier-title">
+                        <h3 id="fokus-karier-title">Fokus Karier</h3>
+                        <p>
+                            Saya memiliki ketertarikan pada bidang Data Analysis
+                            dan pengembangan solusi berbasis teknologi.
+                        </p>
+                    </aside>
+                </div>
+            </div>
+
+            <div class="stat-row">
+                <div class="stat-card stat-blue">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Proyek diselesaikan</span>
+                </div>
+                <div class="stat-card stat-pink">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Bidang fokus utama — Data Analysis &amp; UI/UX</span>
+                </div>
+                <div class="stat-card stat-lime">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Tahap alur kerja, dari riset sampai evaluasi</span>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portofolio" class="portfolio">
+            <div class="section-heading">
+                <h2>Portofolio &amp; Capaian</h2>
+                <p>Rekam jejak proyek kuliah dan proyek pribadi yang sudah saya kerjakan.</p>
+            </div>
+
+            <div class="portfolio-layout">
+
+                <div class="portfolio-main">
+                    <ul class="category-legend">
+                        <li><span class="dot dot-pbo"></span>PBO</li>
+                        <li><span class="dot dot-analisis"></span>Analisis &amp; Perancangan</li>
+                        <li><span class="dot dot-kewirausahaan"></span>Kewirausahaan</li>
+                        <li><span class="dot dot-uiux"></span>UI/UX</li>
+                        <li><span class="dot dot-pribadi"></span>Proyek Pribadi</li>
+                    </ul>
+
+                    <div class="table-scroll">
+                        <table class="portfolio-table">
+                            <caption>Riwayat Proyek dan Karya</caption>
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">Nama Proyek</th>
+                                    <th scope="col">Jenis / Mata Kuliah</th>
+                                    <th scope="col">Fokus / Kontribusi</th>
+                                    <th scope="col">Tools</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr data-category="pbo">
+                                    <th scope="row">1</th>
+                                    <td>Sistem Manajemen Kampus</td>
+                                    <td>PBO</td>
+                                    <td>Database Setup, JDBC, Singleton, Schema SQL</td>
+                                    <td><span class="tool-chip">Java</span><span class="tool-chip">JDBC</span><span class="tool-chip">SQL</span></td>
+                                </tr>
+
+                                <tr data-category="analisis">
+                                    <th scope="row">2</th>
+                                    <td>Sistem Laundry Kampus</td>
+                                    <td>Analisis dan Perancangan Sistem</td>
+                                    <td>UI/UX dan analisis kebutuhan menggunakan SYRS</td>
+                                    <td><span class="tool-chip">UI/UX</span></td>
+                                </tr>
+
+                                <tr data-category="kewirausahaan">
+                                    <th scope="row">3</th>
+                                    <td>Toba Satset</td>
+                                    <td>Kewirausahaan</td>
+                                    <td>Perancangan bisnis dan UI/UX</td>
+                                    <td><span class="tool-chip">Figma</span></td>
+                                </tr>
+
+                                <tr data-category="uiux">
+                                    <th scope="row">4</th>
+                                    <td>Mom Care</td>
+                                    <td>UI/UX</td>
+                                    <td>Perancangan UI/UX aplikasi</td>
+                                    <td><span class="tool-chip">Figma</span></td>
+                                </tr>
+
+                                <tr data-category="pribadi">
+                                    <th scope="row">5</th>
+                                    <td>SafeScan</td>
+                                    <td>Proyek Pribadi</td>
+                                    <td>Perancangan UI/UX aplikasi</td>
+                                    <td><span class="tool-chip">Figma</span></td>
+                                </tr>
+
+                                <tr data-category="pribadi">
+                                    <th scope="row">6</th>
+                                    <td>Fashion Sales Dashboard</td>
+                                    <td>Proyek Pribadi</td>
+                                    <td>Rekapitulasi dan visualisasi data penjualan</td>
+                                    <td><span class="tool-chip">Excel</span><span class="tool-chip">Power BI</span></td>
+                                </tr>
+                            </tbody>
+
+                            <tfoot>
+                                <tr>
+                                    <th colspan="4">Total Proyek</th>
+                                    <td>6</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <aside class="insight-panel" aria-labelledby="insight-title">
+                    <h3 id="insight-title">Sekilas dari 6 Proyek Ini</h3>
+
+                    <div class="donut-block">
+                        <div class="donut-chart" role="img" aria-label="Diagram donat: 2 dari 6 proyek adalah proyek pribadi, sisanya tersebar merata di PBO, analisis, kewirausahaan, dan UI/UX">
+                            <div class="donut-hole">
+                                <span class="donut-number">6</span>
+                                <span class="donut-caption">Proyek</span>
+                            </div>
+                        </div>
+                        <ul class="donut-legend">
+                            <li><span class="dot dot-pribadi"></span>Proyek Pribadi <strong>2</strong></li>
+                            <li><span class="dot dot-uiux"></span>UI/UX <strong>1</strong></li>
+                            <li><span class="dot dot-kewirausahaan"></span>Kewirausahaan <strong>1</strong></li>
+                            <li><span class="dot dot-analisis"></span>Analisis &amp; Perancangan <strong>1</strong></li>
+                            <li><span class="dot dot-pbo"></span>PBO <strong>1</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="bar-block">
+                        <h4>Tools yang Paling Sering Dipakai</h4>
+                        <ul class="bar-chart">
+                            <li>
+                                <div class="bar-label"><span>Figma</span><strong>3 proyek</strong></div>
+                                <div class="bar-track"><div class="bar-fill bar-fill-100"></div></div>
+                            </li>
+                            <li>
+                                <div class="bar-label"><span>Java, JDBC &amp; SQL</span><strong>1 proyek</strong></div>
+                                <div class="bar-track"><div class="bar-fill bar-fill-33"></div></div>
+                            </li>
+                            <li>
+                                <div class="bar-label"><span>Excel &amp; Power BI</span><strong>1 proyek</strong></div>
+                                <div class="bar-track"><div class="bar-fill bar-fill-33"></div></div>
+                            </li>
+                            <li>
+                                <div class="bar-label"><span>Metode UI/UX (SYRS)</span><strong>1 proyek</strong></div>
+                                <div class="bar-track"><div class="bar-fill bar-fill-33"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+
+        <section id="keahlian" class="skills">
+            <div class="skills-grid">
+                <div>
+                    <div class="section-heading">
+                        <h2>Keahlian</h2>
+                        <p>Kombinasi kemampuan teknis dan desain yang saya pakai di setiap proyek.</p>
+                    </div>
+
+                    <ul class="skill-tags">
+                        <li>Data Analysis</li>
+                        <li>UI/UX Design</li>
+                        <li>Database</li>
+                        <li>SQL</li>
+                        <li>Java &amp; JDBC</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+
+                <div class="process-card">
+                    <h3>Alur Pengerjaan Proyek</h3>
+                    <ol class="process-timeline">
+                        <li>Memahami kebutuhan pengguna</li>
+                        <li>Menganalisis permasalahan</li>
+                        <li>Merancang solusi</li>
+                        <li>Membangun atau membuat prototype</li>
+                        <li>Melakukan pengujian dan evaluasi</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="kontak" class="contact">
+            <div class="section-heading">
+                <h2>Formulir Layanan</h2>
+                <p>Butuh bantuan Data Analysis atau UI/UX Design? Isi formulir singkat ini.</p>
+            </div>
+
+            <form class="service-form">
+
+                <fieldset>
+                    <legend>Informasi Kontak</legend>
+
+                    <div class="form-row">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Nama lengkap kamu">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="nama@email.com" aria-describedby="email-help">
+                        <small id="email-help">Dipakai untuk mengirim balasan konfirmasi.</small>
+                    </div>
+
+                    <div class="form-row-group">
+                        <div class="form-row">
+                            <label for="telepon">Nomor Telepon</label>
+                            <input type="tel" id="telepon" name="telepon" required placeholder="08xxxxxxxxxx">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="jumlah">Jumlah Layanan</label>
+                            <input type="number" id="jumlah" name="jumlah" min="1" max="10" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Detail Layanan</legend>
+
+                    <p class="form-group-label">Jenis layanan yang dibutuhkan</p>
+
+                    <div class="radio-options">
+                        <label class="radio-option">
+                            <input type="radio" name="layanan" value="data-analysis" required>
+                            Data Analysis
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="layanan" value="ui-ux">
+                            UI/UX Design
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="prioritas">Prioritas</label>
+                        <select id="prioritas" name="prioritas" required>
+                            <option value="">-- Pilih Prioritas --</option>
+                            <option value="rendah">Rendah</option>
+                            <option value="sedang">Sedang</option>
+                            <option value="tinggi">Tinggi</option>
+                        </select>
+                    </div>
+
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="persetujuan" required>
+                        Saya menyetujui data digunakan untuk keperluan layanan.
+                    </label>
+
+                    <div class="form-row">
+                        <label for="pesan">Pesan / Detail Kebutuhan</label>
+                        <textarea id="pesan" name="pesan" rows="5" required placeholder="Ceritakan kebutuhan kamu di sini..."></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary btn-submit">Kirim Formulir</button>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Laura Awise — Portofolio Sistem Informasi</p>
+    </footer>
+
+</body>
+</html>
