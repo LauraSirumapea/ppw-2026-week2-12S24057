@@ -46,6 +46,7 @@ praktikum01/
 ├── README.md
 └── assets/
     └── laura.jpeg
+     └── screenshot.png
 
     ## GitHub Pages
 
