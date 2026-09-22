@@ -39,11 +39,6 @@ Design Sesudah:
 ![Sesudah](assets/screenshot-sesudah.png)
 
 
-## Cara Menjalankan Secara Lokal
-1. Clone repositori ini.
-2. Buka `index.html` langsung di browser, atau gunakan ekstensi **Live Server** di VS Code.
-3. Pastikan koneksi internet aktif (Bootstrap & font dimuat via CDN).
-
 ## Struktur Folder
 ```
 ├── index.html
