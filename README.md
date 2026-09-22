@@ -50,6 +50,6 @@ _(Tambahkan screenshot tampilan sebelum & sesudah di sini, misalnya:)_
 ├── custom-style.css
 ├── README.md
 └── assets/
-    └── foto-laura.jpeg
+    └── laura.jpeg
     └── screenshot-sebelum.png
 ```
