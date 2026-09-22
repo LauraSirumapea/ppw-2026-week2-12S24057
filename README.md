@@ -32,10 +32,10 @@ berbasis **Bootstrap 5.3** yang dipadukan dengan custom CSS override
 | Variabel Warna | Hardcoded di tiap rule | Terpusat lewat CSS Custom Properties (`:root`) |
 | Ikon | Tidak ada | Bootstrap Icons |
 
-```
+
 ![Sebelum](assets/screenshot-sebelum.png)
 ![Sesudah](assets/screenshot-sesudah.png)
-```
+
 
 ## Cara Menjalankan Secara Lokal
 1. Clone repositori ini.
