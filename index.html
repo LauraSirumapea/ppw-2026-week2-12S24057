@@ -5,341 +5,567 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura Awise — Portofolio Sistem Informasi</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS (wajib dimuat SETELAH Bootstrap) -->
+    <link rel="stylesheet" href="custom-style.css">
 </head>
 
 <body>
 
-    <header class="site-header">
-        <div class="header-inner">
-            <a href="#tentang" class="brand">Laura Awise</a>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top brand-navbar py-3">
+            <div class="container">
+                <a class="navbar-brand brand-logo" href="#beranda">LA<span>.</span></a>
 
-            <nav class="site-nav" aria-label="Navigasi utama">
-                <a href="#tentang">Tentang Saya</a>
-                <a href="#portofolio">Portofolio</a>
-                <a href="#keahlian">Keahlian</a>
-                <a href="#kontak">Formulir Layanan</a>
-            </nav>
-        </div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Buka menu navigasi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-brand-primary rounded-pill px-4" href="#kontak">Hubungi Saya</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
 
-        <section id="tentang" class="hero">
-            <div class="hero-grid">
-                <div class="hero-copy">
-                    <p class="hero-eyebrow">Mahasiswa Sistem Informasi · Institut Teknologi Del</p>
-                    <h1 class="hero-name">Laura Awise</h1>
-                    <p class="hero-lede">
-                        Saya adalah mahasiswa Sistem Informasi Institut Teknologi Del
-                        semester 5 yang tertarik pada bidang teknologi, pengolahan data,
-                        dan perancangan antarmuka aplikasi.
-                    </p>
-                    <ul class="hero-focus-pills">
-                        <li>Data Analysis</li>
-                        <li>UI/UX Design</li>
-                    </ul>
-                    <div class="hero-actions">
-                        <a href="#portofolio" class="btn btn-primary">Lihat Portofolio</a>
-                        <a href="#kontak" class="btn btn-ghost">Hubungi Saya</a>
-                    </div>
-                </div>
-
-                <div class="hero-side">
-                    <div class="avatar-frame">
-                        <!-- GANTI src di bawah ini dengan foto kamu, taruh filenya di folder assets/ -->
-                        <img src="assets/laura.jpeg" alt="Foto Laura Awise" class="avatar-photo"
-                             onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
-                        <div id="avatar-fallback" class="avatar-fallback" aria-hidden="true">
-                            <span>LA</span>
+        <!-- ============ HERO ============ -->
+        <section id="beranda" class="hero-section py-5">
+            <div class="container py-lg-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <p class="eyebrow mb-3">Halo, saya seorang</p>
+                        <h1 class="hero-heading mb-4">
+                            MAHASISWA<br>
+                            <span class="text-accent">SISTEM INFORMASI</span>
+                        </h1>
+                        <p class="hero-lede mb-4">
+                            Saya adalah mahasiswa Sistem Informasi Institut Teknologi Del
+                            semester 5 yang tertarik pada bidang teknologi, pengolahan data,
+                            dan perancangan antarmuka aplikasi.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#portofolio" class="btn btn-brand-primary btn-lg rounded-pill px-4">
+                                Lihat Portofolio <i class="bi bi-arrow-up-right ms-1"></i>
+                            </a>
+                            <a href="#kontak" class="btn btn-brand-outline btn-lg rounded-pill px-4">
+                                Hubungi Saya
+                            </a>
                         </div>
                     </div>
 
-                    <aside class="focus-card" aria-labelledby="fokus-karier-title">
-                        <h3 id="fokus-karier-title">Fokus Karier</h3>
-                        <p>
-                            Saya memiliki ketertarikan pada bidang Data Analysis
-                            dan pengembangan solusi berbasis teknologi.
-                        </p>
-                    </aside>
-                </div>
-            </div>
-
-            <div class="stat-row">
-                <div class="stat-card stat-blue">
-                    <span class="stat-number">6</span>
-                    <span class="stat-label">Proyek diselesaikan</span>
-                </div>
-                <div class="stat-card stat-pink">
-                    <span class="stat-number">2</span>
-                    <span class="stat-label">Bidang fokus utama — Data Analysis &amp; UI/UX</span>
-                </div>
-                <div class="stat-card stat-lime">
-                    <span class="stat-number">5</span>
-                    <span class="stat-label">Tahap alur kerja, dari riset sampai evaluasi</span>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="portofolio" class="portfolio">
-            <div class="section-heading">
-                <h2>Portofolio &amp; Capaian</h2>
-                <p>Rekam jejak proyek kuliah dan proyek pribadi yang sudah saya kerjakan.</p>
-            </div>
-
-            <div class="portfolio-layout">
-
-                <div class="portfolio-main">
-                    <ul class="category-legend">
-                        <li><span class="dot dot-pbo"></span>PBO</li>
-                        <li><span class="dot dot-analisis"></span>Analisis &amp; Perancangan</li>
-                        <li><span class="dot dot-kewirausahaan"></span>Kewirausahaan</li>
-                        <li><span class="dot dot-uiux"></span>UI/UX</li>
-                        <li><span class="dot dot-pribadi"></span>Proyek Pribadi</li>
-                    </ul>
-
-                    <div class="table-scroll">
-                        <table class="portfolio-table">
-                            <caption>Riwayat Proyek dan Karya</caption>
-
-                            <thead>
-                                <tr>
-                                    <th scope="col">No</th>
-                                    <th scope="col">Nama Proyek</th>
-                                    <th scope="col">Jenis / Mata Kuliah</th>
-                                    <th scope="col">Fokus / Kontribusi</th>
-                                    <th scope="col">Tools</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr data-category="pbo">
-                                    <th scope="row">1</th>
-                                    <td>Sistem Manajemen Kampus</td>
-                                    <td>PBO</td>
-                                    <td>Database Setup, JDBC, Singleton, Schema SQL</td>
-                                    <td><span class="tool-chip">Java</span><span class="tool-chip">JDBC</span><span class="tool-chip">SQL</span></td>
-                                </tr>
-
-                                <tr data-category="analisis">
-                                    <th scope="row">2</th>
-                                    <td>Sistem Laundry Kampus</td>
-                                    <td>Analisis dan Perancangan Sistem</td>
-                                    <td>UI/UX dan analisis kebutuhan menggunakan SYRS</td>
-                                    <td><span class="tool-chip">UI/UX</span></td>
-                                </tr>
-
-                                <tr data-category="kewirausahaan">
-                                    <th scope="row">3</th>
-                                    <td>Toba Satset</td>
-                                    <td>Kewirausahaan</td>
-                                    <td>Perancangan bisnis dan UI/UX</td>
-                                    <td><span class="tool-chip">Figma</span></td>
-                                </tr>
-
-                                <tr data-category="uiux">
-                                    <th scope="row">4</th>
-                                    <td>Mom Care</td>
-                                    <td>UI/UX</td>
-                                    <td>Perancangan UI/UX aplikasi</td>
-                                    <td><span class="tool-chip">Figma</span></td>
-                                </tr>
-
-                                <tr data-category="pribadi">
-                                    <th scope="row">5</th>
-                                    <td>SafeScan</td>
-                                    <td>Proyek Pribadi</td>
-                                    <td>Perancangan UI/UX aplikasi</td>
-                                    <td><span class="tool-chip">Figma</span></td>
-                                </tr>
-
-                                <tr data-category="pribadi">
-                                    <th scope="row">6</th>
-                                    <td>Fashion Sales Dashboard</td>
-                                    <td>Proyek Pribadi</td>
-                                    <td>Rekapitulasi dan visualisasi data penjualan</td>
-                                    <td><span class="tool-chip">Excel</span><span class="tool-chip">Power BI</span></td>
-                                </tr>
-                            </tbody>
-
-                            <tfoot>
-                                <tr>
-                                    <th colspan="4">Total Proyek</th>
-                                    <td>6</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
-
-                <aside class="insight-panel" aria-labelledby="insight-title">
-                    <h3 id="insight-title">Sekilas dari 6 Proyek Ini</h3>
-
-                    <div class="donut-block">
-                        <div class="donut-chart" role="img" aria-label="Diagram donat: 2 dari 6 proyek adalah proyek pribadi, sisanya tersebar merata di PBO, analisis, kewirausahaan, dan UI/UX">
-                            <div class="donut-hole">
-                                <span class="donut-number">6</span>
-                                <span class="donut-caption">Proyek</span>
+                    <div class="col-lg-6">
+                        <div class="hero-image-wrap mx-auto">
+                            <div class="hero-blob" aria-hidden="true"></div>
+                            <img src="assets/foto-laura.jpg" alt="Foto Laura Awise" class="hero-photo"
+                                 onerror="this.style.display='none'; document.getElementById('heroFallback').style.display='flex';">
+                            <div id="heroFallback" class="hero-photo hero-fallback" aria-hidden="true">
+                                <span>LA</span>
+                            </div>
+                            <div class="hero-location-badge">
+                                <i class="bi bi-geo-alt-fill"></i> Kuliah di Toba Samosir
                             </div>
                         </div>
-                        <ul class="donut-legend">
-                            <li><span class="dot dot-pribadi"></span>Proyek Pribadi <strong>2</strong></li>
-                            <li><span class="dot dot-uiux"></span>UI/UX <strong>1</strong></li>
-                            <li><span class="dot dot-kewirausahaan"></span>Kewirausahaan <strong>1</strong></li>
-                            <li><span class="dot dot-analisis"></span>Analisis &amp; Perancangan <strong>1</strong></li>
-                            <li><span class="dot dot-pbo"></span>PBO <strong>1</strong></li>
-                        </ul>
                     </div>
-
-                    <div class="bar-block">
-                        <h4>Tools yang Paling Sering Dipakai</h4>
-                        <ul class="bar-chart">
-                            <li>
-                                <div class="bar-label"><span>Figma</span><strong>3 proyek</strong></div>
-                                <div class="bar-track"><div class="bar-fill bar-fill-100"></div></div>
-                            </li>
-                            <li>
-                                <div class="bar-label"><span>Java, JDBC &amp; SQL</span><strong>1 proyek</strong></div>
-                                <div class="bar-track"><div class="bar-fill bar-fill-33"></div></div>
-                            </li>
-                            <li>
-                                <div class="bar-label"><span>Excel &amp; Power BI</span><strong>1 proyek</strong></div>
-                                <div class="bar-track"><div class="bar-fill bar-fill-33"></div></div>
-                            </li>
-                            <li>
-                                <div class="bar-label"><span>Metode UI/UX (SYRS)</span><strong>1 proyek</strong></div>
-                                <div class="bar-track"><div class="bar-fill bar-fill-33"></div></div>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
-
-            </div>
-        </section>
-
-
-        <section id="keahlian" class="skills">
-            <div class="skills-grid">
-                <div>
-                    <div class="section-heading">
-                        <h2>Keahlian</h2>
-                        <p>Kombinasi kemampuan teknis dan desain yang saya pakai di setiap proyek.</p>
-                    </div>
-
-                    <ul class="skill-tags">
-                        <li>Data Analysis</li>
-                        <li>UI/UX Design</li>
-                        <li>Database</li>
-                        <li>SQL</li>
-                        <li>Java &amp; JDBC</li>
-                        <li>Figma</li>
-                    </ul>
                 </div>
 
-                <div class="process-card">
-                    <h3>Alur Pengerjaan Proyek</h3>
-                    <ol class="process-timeline">
-                        <li>Memahami kebutuhan pengguna</li>
-                        <li>Menganalisis permasalahan</li>
-                        <li>Merancang solusi</li>
-                        <li>Membangun atau membuat prototype</li>
-                        <li>Melakukan pengujian dan evaluasi</li>
-                    </ol>
+                <!-- Stat strip -->
+                <div class="row g-3 g-md-4 mt-5 stat-strip">
+                    <div class="col-6 col-md-3">
+                        <div class="stat-box">
+                            <i class="bi bi-mortarboard-fill"></i>
+                            <strong>5</strong>
+                            <span>Semester Berjalan</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-box">
+                            <i class="bi bi-kanban-fill"></i>
+                            <strong>6</strong>
+                            <span>Proyek Selesai</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-box">
+                            <i class="bi bi-bullseye"></i>
+                            <strong>2</strong>
+                            <span>Bidang Fokus Utama</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-box">
+                            <i class="bi bi-diagram-3-fill"></i>
+                            <strong>5</strong>
+                            <span>Tahap Alur Kerja</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
 
-        <section id="kontak" class="contact">
-            <div class="section-heading">
-                <h2>Formulir Layanan</h2>
-                <p>Butuh bantuan Data Analysis atau UI/UX Design? Isi formulir singkat ini.</p>
+        <!-- ============ KEAHLIAN ============ -->
+        <section id="keahlian" class="expertise-section py-5">
+            <div class="container py-lg-3">
+                <div class="section-heading mb-5">
+                    <p class="eyebrow">Keahlian Saya</p>
+                    <h2>Kombinasi teknis &amp; desain</h2>
+                    <p class="text-muted-soft">Kemampuan yang saya pakai berulang kali di setiap proyek kuliah maupun pribadi.</p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="expertise-card h-100">
+                            <div class="expertise-icon"><i class="bi bi-bar-chart-line-fill"></i></div>
+                            <h3>Data Analysis</h3>
+                            <p>Mengolah dan memvisualisasikan data mentah menjadi insight, seperti pada proyek Fashion Sales Dashboard.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="expertise-card h-100">
+                            <div class="expertise-icon"><i class="bi bi-palette2"></i></div>
+                            <h3>UI/UX Design</h3>
+                            <p>Merancang antarmuka yang mudah dipakai, mulai dari riset kebutuhan sampai prototype di Figma.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="expertise-card h-100">
+                            <div class="expertise-icon"><i class="bi bi-database-fill"></i></div>
+                            <h3>Database &amp; SQL</h3>
+                            <p>Merancang skema dan query database untuk mendukung sistem, seperti pada Sistem Manajemen Kampus.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="expertise-card h-100">
+                            <div class="expertise-icon"><i class="bi bi-code-slash"></i></div>
+                            <h3>Java &amp; JDBC</h3>
+                            <p>Membangun logika aplikasi berbasis objek dan menghubungkannya dengan database melalui JDBC.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <form class="service-form">
 
-                <fieldset>
-                    <legend>Informasi Kontak</legend>
-
-                    <div class="form-row">
-                        <label for="nama">Nama Lengkap</label>
-                        <input type="text" id="nama" name="nama" required placeholder="Nama lengkap kamu">
-                    </div>
-
-                    <div class="form-row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="nama@email.com" aria-describedby="email-help">
-                        <small id="email-help">Dipakai untuk mengirim balasan konfirmasi.</small>
-                    </div>
-
-                    <div class="form-row-group">
-                        <div class="form-row">
-                            <label for="telepon">Nomor Telepon</label>
-                            <input type="tel" id="telepon" name="telepon" required placeholder="08xxxxxxxxxx">
-                        </div>
-
-                        <div class="form-row">
-                            <label for="jumlah">Jumlah Layanan</label>
-                            <input type="number" id="jumlah" name="jumlah" min="1" max="10" required>
+        <!-- ============ TOOLS & PROCESS ============ -->
+        <section class="tools-process-section py-5">
+            <div class="container py-lg-3">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <p class="eyebrow">Tools &amp; Teknologi</p>
+                        <h2 class="mb-4">Yang sering saya pakai</h2>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tool-pill"><i class="bi bi-vector-pen me-1"></i>Figma</span>
+                            <span class="tool-pill"><i class="bi bi-cup-hot-fill me-1"></i>Java</span>
+                            <span class="tool-pill"><i class="bi bi-plug-fill me-1"></i>JDBC</span>
+                            <span class="tool-pill"><i class="bi bi-server me-1"></i>SQL</span>
+                            <span class="tool-pill"><i class="bi bi-file-earmark-spreadsheet-fill me-1"></i>Excel</span>
+                            <span class="tool-pill"><i class="bi bi-graph-up me-1"></i>Power BI</span>
                         </div>
                     </div>
-                </fieldset>
+
+                    <div class="col-lg-7">
+                        <p class="eyebrow">Cara Kerja Saya</p>
+                        <h2 class="mb-4">Alur Pengerjaan Proyek</h2>
+                        <ol class="process-list">
+                            <li><span class="process-num">01</span>Memahami kebutuhan pengguna</li>
+                            <li><span class="process-num">02</span>Menganalisis permasalahan</li>
+                            <li><span class="process-num">03</span>Merancang solusi</li>
+                            <li><span class="process-num">04</span>Membangun atau membuat prototype</li>
+                            <li><span class="process-num">05</span>Melakukan pengujian dan evaluasi</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-                <fieldset>
-                    <legend>Detail Layanan</legend>
+        <!-- ============ PORTOFOLIO (Cards + Modal) ============ -->
+        <section id="portofolio" class="portfolio-section py-5">
+            <div class="container py-lg-3">
+                <div class="section-heading mb-5">
+                    <p class="eyebrow">Portofolio</p>
+                    <h2>Proyek &amp; Capaian</h2>
+                    <p class="text-muted-soft">Klik "Lihat Detail" pada tiap kartu untuk info lengkap proyeknya.</p>
+                </div>
 
-                    <p class="form-group-label">Jenis layanan yang dibutuhkan</p>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-                    <div class="radio-options">
-                        <label class="radio-option">
-                            <input type="radio" name="layanan" value="data-analysis" required>
-                            Data Analysis
-                        </label>
-
-                        <label class="radio-option">
-                            <input type="radio" name="layanan" value="ui-ux">
-                            UI/UX Design
-                        </label>
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card project-card h-100">
+                            <div class="project-banner banner-1"><i class="bi bi-database"></i></div>
+                            <div class="card-body">
+                                <span class="badge project-badge mb-2">PBO</span>
+                                <h3 class="card-title h5">Sistem Manajemen Kampus</h3>
+                                <p class="card-text">Database Setup, JDBC, Singleton, Schema SQL.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-3">
+                                    <span class="tool-chip">Java</span><span class="tool-chip">JDBC</span><span class="tool-chip">SQL</span>
+                                </div>
+                                <button type="button" class="btn btn-brand-outline btn-sm rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#modalProject1">
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="form-row">
-                        <label for="prioritas">Prioritas</label>
-                        <select id="prioritas" name="prioritas" required>
-                            <option value="">-- Pilih Prioritas --</option>
-                            <option value="rendah">Rendah</option>
-                            <option value="sedang">Sedang</option>
-                            <option value="tinggi">Tinggi</option>
-                        </select>
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card project-card h-100">
+                            <div class="project-banner banner-2"><i class="bi bi-basket3-fill"></i></div>
+                            <div class="card-body">
+                                <span class="badge project-badge mb-2">Analisis &amp; Perancangan</span>
+                                <h3 class="card-title h5">Sistem Laundry Kampus</h3>
+                                <p class="card-text">UI/UX dan analisis kebutuhan menggunakan SYRS.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-3">
+                                    <span class="tool-chip">UI/UX</span>
+                                </div>
+                                <button type="button" class="btn btn-brand-outline btn-sm rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#modalProject2">
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
-                    <label class="checkbox-option">
-                        <input type="checkbox" name="persetujuan" required>
-                        Saya menyetujui data digunakan untuk keperluan layanan.
-                    </label>
-
-                    <div class="form-row">
-                        <label for="pesan">Pesan / Detail Kebutuhan</label>
-                        <textarea id="pesan" name="pesan" rows="5" required placeholder="Ceritakan kebutuhan kamu di sini..."></textarea>
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card project-card h-100">
+                            <div class="project-banner banner-3"><i class="bi bi-rocket-takeoff-fill"></i></div>
+                            <div class="card-body">
+                                <span class="badge project-badge mb-2">Kewirausahaan</span>
+                                <h3 class="card-title h5">Toba Satset</h3>
+                                <p class="card-text">Perancangan bisnis dan UI/UX.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-3">
+                                    <span class="tool-chip">Figma</span>
+                                </div>
+                                <button type="button" class="btn btn-brand-outline btn-sm rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#modalProject3">
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </fieldset>
 
-                <button type="submit" class="btn btn-primary btn-submit">Kirim Formulir</button>
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <div class="card project-card h-100">
+                            <div class="project-banner banner-4"><i class="bi bi-heart-fill"></i></div>
+                            <div class="card-body">
+                                <span class="badge project-badge mb-2">UI/UX</span>
+                                <h3 class="card-title h5">Mom Care</h3>
+                                <p class="card-text">Perancangan UI/UX aplikasi.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-3">
+                                    <span class="tool-chip">Figma</span>
+                                </div>
+                                <button type="button" class="btn btn-brand-outline btn-sm rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#modalProject4">
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-            </form>
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <div class="card project-card h-100">
+                            <div class="project-banner banner-5"><i class="bi bi-shield-fill-check"></i></div>
+                            <div class="card-body">
+                                <span class="badge project-badge mb-2">Proyek Pribadi</span>
+                                <h3 class="card-title h5">SafeScan</h3>
+                                <p class="card-text">Perancangan UI/UX aplikasi.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-3">
+                                    <span class="tool-chip">Figma</span>
+                                </div>
+                                <button type="button" class="btn btn-brand-outline btn-sm rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#modalProject5">
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col">
+                        <div class="card project-card h-100">
+                            <div class="project-banner banner-6"><i class="bi bi-bag-check-fill"></i></div>
+                            <div class="card-body">
+                                <span class="badge project-badge mb-2">Proyek Pribadi</span>
+                                <h3 class="card-title h5">Fashion Sales Dashboard</h3>
+                                <p class="card-text">Rekapitulasi dan visualisasi data penjualan.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-3">
+                                    <span class="tool-chip">Excel</span><span class="tool-chip">Power BI</span>
+                                </div>
+                                <button type="button" class="btn btn-brand-outline btn-sm rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#modalProject6">
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============ CONTACT FORM ============ -->
+        <section id="kontak" class="contact-section py-5">
+            <div class="container py-lg-3">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-heading text-center mb-5">
+                            <p class="eyebrow">Formulir Layanan</p>
+                            <h2>Butuh bantuan Data Analysis atau UI/UX?</h2>
+                            <p class="text-muted-soft">Isi formulir di bawah, saya balas secepatnya.</p>
+                        </div>
+
+                        <form class="row g-3 needs-validation contact-form" novalidate>
+
+                            <div class="col-12">
+                                <h3 class="form-legend"><i class="bi bi-person-lines-fill me-2"></i>Informasi Kontak</h3>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap" required>
+                                    <label for="nama">Nama Lengkap</label>
+                                    <div class="invalid-feedback">Nama wajib diisi.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="nama@email.com" required>
+                                    <label for="email"><i class="bi bi-envelope me-1"></i>Email</label>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="telepon" class="form-label small fw-semibold">Nomor Telepon</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                                    <input type="tel" class="form-control" id="telepon" placeholder="08xxxxxxxxxx" required>
+                                    <div class="invalid-feedback">Nomor telepon wajib diisi.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="jumlah" class="form-label small fw-semibold">Jumlah Layanan</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-list-ol"></i></span>
+                                    <input type="number" class="form-control" id="jumlah" min="1" max="10" required>
+                                    <div class="invalid-feedback">Isi antara 1 - 10.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <h3 class="form-legend"><i class="bi bi-gear-fill me-2"></i>Detail Layanan</h3>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label small fw-semibold d-block">Jenis layanan yang dibutuhkan</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="layanan" id="layananData" value="data-analysis" required>
+                                    <label class="form-check-label" for="layananData">Data Analysis</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="layanan" id="layananUiux" value="ui-ux">
+                                    <label class="form-check-label" for="layananUiux">UI/UX Design</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="prioritas" required>
+                                        <option value="" selected disabled>Pilih...</option>
+                                        <option value="rendah">Rendah</option>
+                                        <option value="sedang">Sedang</option>
+                                        <option value="tinggi">Tinggi</option>
+                                    </select>
+                                    <label for="prioritas">Prioritas</label>
+                                    <div class="invalid-feedback">Pilih salah satu prioritas.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="pesan" placeholder="Ceritakan kebutuhanmu" style="height: 120px" required></textarea>
+                                    <label for="pesan">Pesan / Detail Kebutuhan</label>
+                                    <div class="invalid-feedback">Ceritakan sedikit kebutuhanmu.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="persetujuan" required>
+                                    <label class="form-check-label small" for="persetujuan">
+                                        Saya menyetujui data digunakan untuk keperluan layanan.
+                                    </label>
+                                    <div class="invalid-feedback">Kamu harus menyetujui ini dulu.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-brand-primary btn-lg rounded-pill w-100">
+                                    Kirim Formulir <i class="bi bi-send-fill ms-1"></i>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
 
 
-    <footer class="site-footer">
-        <p>&copy; 2026 Laura Awise — Portofolio Sistem Informasi</p>
+    <footer class="site-footer py-4 text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Laura Awise — Portofolio Sistem Informasi</p>
+        </div>
     </footer>
+
+
+    <!-- ============ MODALS DETAIL PROYEK ============ -->
+
+    <div class="modal fade" id="modalProject1" tabindex="-1" aria-labelledby="modalProject1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProject1Label">Sistem Manajemen Kampus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="badge project-badge mb-3">PBO</span>
+                    <p><strong>Fokus / Kontribusi:</strong> Database Setup, JDBC, Singleton, Schema SQL.</p>
+                    <p><strong>Tools:</strong> Java, JDBC, SQL.</p>
+                    <p class="mb-0">Proyek ini dikerjakan untuk mata kuliah Pemrograman Berorientasi Objek (PBO), berfokus pada perancangan skema basis data dan koneksinya ke aplikasi Java menggunakan pola desain Singleton.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProject2" tabindex="-1" aria-labelledby="modalProject2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProject2Label">Sistem Laundry Kampus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="badge project-badge mb-3">Analisis &amp; Perancangan Sistem</span>
+                    <p><strong>Fokus / Kontribusi:</strong> UI/UX dan analisis kebutuhan menggunakan SYRS.</p>
+                    <p><strong>Tools:</strong> UI/UX.</p>
+                    <p class="mb-0">Dikerjakan untuk mata kuliah Analisis dan Perancangan Sistem, proyek ini menganalisis kebutuhan pengguna layanan laundry kampus dan menuangkannya ke dalam rancangan antarmuka.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProject3" tabindex="-1" aria-labelledby="modalProject3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProject3Label">Toba Satset</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="badge project-badge mb-3">Kewirausahaan</span>
+                    <p><strong>Fokus / Kontribusi:</strong> Perancangan bisnis dan UI/UX.</p>
+                    <p><strong>Tools:</strong> Figma.</p>
+                    <p class="mb-0">Proyek mata kuliah Kewirausahaan ini menggabungkan perancangan model bisnis dengan desain antarmuka aplikasi menggunakan Figma.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProject4" tabindex="-1" aria-labelledby="modalProject4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProject4Label">Mom Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="badge project-badge mb-3">UI/UX</span>
+                    <p><strong>Fokus / Kontribusi:</strong> Perancangan UI/UX aplikasi.</p>
+                    <p><strong>Tools:</strong> Figma.</p>
+                    <p class="mb-0">Proyek mata kuliah UI/UX ini berfokus pada perancangan antarmuka aplikasi seputar kebutuhan seputar perawatan ibu dan anak.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProject5" tabindex="-1" aria-labelledby="modalProject5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProject5Label">SafeScan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="badge project-badge mb-3">Proyek Pribadi</span>
+                    <p><strong>Fokus / Kontribusi:</strong> Perancangan UI/UX aplikasi.</p>
+                    <p><strong>Tools:</strong> Figma.</p>
+                    <p class="mb-0">Proyek pribadi di luar perkuliahan, berupa konsep aplikasi mobile untuk membantu mendeteksi indikasi penipuan digital.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProject6" tabindex="-1" aria-labelledby="modalProject6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProject6Label">Fashion Sales Dashboard</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <span class="badge project-badge mb-3">Proyek Pribadi</span>
+                    <p><strong>Fokus / Kontribusi:</strong> Rekapitulasi dan visualisasi data penjualan.</p>
+                    <p><strong>Tools:</strong> Excel, Power BI.</p>
+                    <p class="mb-0">Proyek pribadi berupa dashboard interaktif untuk merekap dan memvisualisasikan data penjualan produk fashion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Aktivasi validasi form Bootstrap (pola resmi dari dokumentasi Bootstrap) -->
+    <script>
+        (function () {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
 
 </body>
 </html>
