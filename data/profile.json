@@ -1,0 +1,32 @@
+{
+  "name": "Laura Awise",
+  "role": "Mahasiswa Sistem Informasi",
+  "campus": "Institut Teknologi Del",
+  "location": "Toba Samosir",
+  "bio": "Saya adalah mahasiswa Sistem Informasi Institut Teknologi Del semester 5 yang tertarik pada bidang teknologi, pengolahan data, dan perancangan antarmuka aplikasi.",
+  "focusAreas": [
+    "Data Analysis",
+    "UI/UX Design"
+  ],
+  "stats": {
+    "semester": 5,
+    "totalProjects": 10,
+    "focusAreasCount": 2,
+    "workflowSteps": 5
+  },
+  "workflow": [
+    "Memahami kebutuhan pengguna",
+    "Menganalisis permasalahan",
+    "Merancang solusi",
+    "Membangun atau membuat prototype",
+    "Melakukan pengujian dan evaluasi"
+  ],
+  "tools": [
+    "Figma",
+    "Java",
+    "JDBC",
+    "SQL",
+    "Excel",
+    "Power BI"
+  ]
+}

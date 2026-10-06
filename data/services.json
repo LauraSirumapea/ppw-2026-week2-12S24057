@@ -1,0 +1,20 @@
+[
+  {
+    "id": "data-analysis",
+    "name": "Data Analysis",
+    "description": "Mengolah dan memvisualisasikan data mentah menjadi insight yang mudah dipahami.",
+    "icon": "bi-bar-chart-line-fill"
+  },
+  {
+    "id": "ui-ux",
+    "name": "UI/UX Design",
+    "description": "Merancang antarmuka aplikasi yang mudah digunakan, mulai dari riset kebutuhan sampai prototype.",
+    "icon": "bi-palette2"
+  },
+  {
+    "id": "konsultasi",
+    "name": "Konsultasi & Analisis Kebutuhan",
+    "description": "Membantu memetakan kebutuhan sistem sebelum masuk ke tahap desain atau pengembangan.",
+    "icon": "bi-clipboard-check"
+  }
+]
